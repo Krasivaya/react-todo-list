@@ -1,0 +1,12 @@
+.todoTitle{
+  cursor: pointer;
+}
+
+.addItem{
+  &__input{
+    margin-bottom: 10px;
+  }
+  &__header{
+    margin-bottom: 20px;
+  }
+}
