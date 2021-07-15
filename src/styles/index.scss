@@ -1,12 +1,18 @@
-.todoTitle{
+.todoTitle {
   cursor: pointer;
 }
 
-.addItem{
-  &__input{
+.addItem {
+  &__input {
     margin-bottom: 10px;
   }
-  &__header{
+  &__header {
     margin-bottom: 20px;
   }
+}
+
+.modal.active {
+  top: auto !important;
+  left: auto !important;
+  height: auto !important;
 }
