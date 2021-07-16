@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Link className="navbar__brand" to="/">
         Todo App
-        <span className="badge badge-primary badge-pill ml-2">
+        <span className="navbar__brand__badge">
           {todoList.filter(todo => todo.isComplete === false).length}
         </span>
       </Link>
