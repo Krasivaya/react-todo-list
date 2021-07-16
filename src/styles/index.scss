@@ -1,18 +1,16 @@
-.todoTitle {
-  cursor: pointer;
-}
-
-.addItem {
-  &__input {
-    margin-bottom: 10px;
+.todo {
+  display: flex;
+  justify-content: center;
+  &__list {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 60%;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+    &__btn {
+      margin-bottom: 30px !important;
+    }
   }
-  &__header {
-    margin-bottom: 20px;
-  }
-}
-
-.modal.active {
-  top: auto !important;
-  left: auto !important;
-  height: auto !important;
 }

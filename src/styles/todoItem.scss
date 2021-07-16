@@ -1,12 +1,47 @@
 .todoItem {
-  margin-right: 20px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   border: 1px solid rgb(219, 219, 219);
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 20px;
-  .todoItem__btn {
-    float: right;
-    border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    display: flex;
+    padding-top: 5px;
+    width: 80%;
+    @media screen and (max-width: 500px) {
+      width: 70%;
+    }
+    &__input {
+      margin: 5px 5px 0 0 !important;
+      float: left !important;
+      cursor: pointer;
+    }
+    h5 {
+      margin-top: 2px;
+    }
+  }
+  &__btn {
+    &--edit, &--delete {
+      margin-top: 5px;
+      background: none;
+      border-radius: 15px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    &--edit {
+      color: #2185d0;
+    }
+    &--delete {
+      color: #dc3545;
+    }
+  }
+  &__modal {
+    top: auto !important;
+    left: auto !important;
+    height: auto !important;
   }
 }

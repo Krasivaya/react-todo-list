@@ -1,20 +1,29 @@
 .navbar {
+  display: flex;
   color: #fff;
   background-color: #004e72;
   margin-bottom: 20px;
-  .navbar__brand {
+  padding: 0.5rem 1rem;
+  &__brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
     font-size: 1.8rem;
     color: inherit;
-  }
-  .navbar__brand:hover, .navbar__brand:focus {
-    text-decoration: none;
-    color: inherit;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: inherit;
+    }
+    &__badge {
+      display: inline-block;
+      padding: 0.25em 0.4em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      border-radius: 10rem;
+      margin-left: 0.5rem;
+      background-color: #007bff;
+    }
   }
 }
-
-
-
-
